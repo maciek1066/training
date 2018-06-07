@@ -1,0 +1,13 @@
+import requests
+
+tr_id = data["txs"][0]["hash"]
+tr_inputs = data["txs"][0]["inputs"]
+tr_outputs = data["txs"][0]["out"]
+tr_time_stamp = data["txs"][0]["time"]
+
+
+response = request.get("https://blockchain.info/rawaddr/3D2oetdNuZUqQHPJmcMDDHYoqkyNVsFk9r")
+
+data = response.json()
+
+print(tr_id = data[0]["hash"])
