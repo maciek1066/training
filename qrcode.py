@@ -4,10 +4,10 @@ address = "12cturzVPXtVFsXPrPFtjGfwD9nNumQG1b"
 
 # Create qr code instance
 qr = qrcode.QRCode(
-    version = 1,
-    error_correction = qrcode.constants.ERROR_CORRECT_H,
-    box_size = 10,
-    border = 4,
+    version=1,
+    error_correction=qrcode.constants.ERROR_CORRECT_H,
+    box_size=10,
+    border=4,
 )
 
 # The data that you want to store

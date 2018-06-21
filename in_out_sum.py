@@ -8,17 +8,18 @@ data = response.json()
 #  inputs value
 
 for tx in data["txs"]:
-	tx_inp_sum = 0
-	for inp in tx["inputs"]:
-		tx_inp_sum += (inp["prev_out"]["value"])
-		 
+    tx_inp_sum = 0
+    for inp in tx["inputs"]:
+        tx_inp_sum += (inp["prev_out"]["value"])
+
+
 print(tx_inp_sum)
 
 print("-------")
 #  outputs value
 for tx in data["txs"]:
-	tx_out_sum = 0
-	for inp in tx["out"]:
-		tx_out_sum += (inp["value"])
+    tx_out_sum = 0
+    for inp in tx["out"]:
+        tx_out_sum += (inp["value"])
+
 print(tx_out_sum)
-# print(data)
